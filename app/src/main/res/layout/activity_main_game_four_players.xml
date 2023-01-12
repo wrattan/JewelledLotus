@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainGameFourPlayers">
 
+
+    
     <View
         android:id="@+id/one"
         android:layout_width="0dp"
@@ -444,10 +446,10 @@
         android:id="@+id/CalcMenuPlayerOne"
         android:layout_width="86dp"
         android:layout_height="86dp"
-        android:layout_marginStart="273dp"
-        android:layout_marginTop="92dp"
-        android:layout_marginEnd="370dp"
-        android:layout_marginBottom="271dp"
+        android:layout_marginStart="266dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="379dp"
+        android:layout_marginBottom="251dp"
         android:alpha="0.00"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"

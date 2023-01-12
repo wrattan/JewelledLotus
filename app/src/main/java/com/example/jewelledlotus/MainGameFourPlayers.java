@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
@@ -79,8 +81,9 @@ public class MainGameFourPlayers extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-
-
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main_game_four_players);
 
         Menu = findViewById(R.id.MenuButton);
@@ -345,8 +348,9 @@ public class MainGameFourPlayers extends AppCompatActivity {
         ExitPopUp.setOnClickListener(view1 -> popupWindow.dismiss());
 
         ExitGame.setOnClickListener(view12 -> {
+            Intent intent = new Intent(MainGameFourPlayers.this, MainActivity.class);
+            startActivity(intent);
             finish();
-            System.exit(0);
         });
 
         ResetGame.setOnClickListener(view13 -> {

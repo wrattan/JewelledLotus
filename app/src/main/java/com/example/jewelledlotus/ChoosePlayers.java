@@ -20,7 +20,7 @@ public class ChoosePlayers extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(ChoosePlayers.this, MainGameFourPlayers.class);
                 startActivity(intent);
-
+                finish();
             }
         });
 
