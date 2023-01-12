@@ -3,6 +3,7 @@ package com.example.jewelledlotus;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActionBar;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -57,8 +58,12 @@ public class MainGameFourPlayers extends AppCompatActivity {
 
     Button PlayerPicker;
 
-    public boolean Addition,Subtraction,Multiplication,Division;
-    public int Value1,Value2;
+    public boolean Addition =false;
+    public boolean Subtraction =false;
+    public boolean Multiplication =false;
+    public boolean Division =false;
+    public int Value1 = 0;
+    public int Value2 = 0;
 
     public boolean PlayerOneClickedCalc =false;
     public boolean PlayerTwoClickedCalc =false;
@@ -76,15 +81,25 @@ public class MainGameFourPlayers extends AppCompatActivity {
     public String _stringValPLayer3;
     public String _stringValPlayer4;
 
+    private View DecorView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//               WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_main_game_four_players);
+
+        this.getWindow().getDecorView().setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_FULLSCREEN);
 
         Menu = findViewById(R.id.MenuButton);
         PlayerOneCalc = findViewById(R.id.CalcMenuPlayerOne);
@@ -237,31 +252,40 @@ public class MainGameFourPlayers extends AppCompatActivity {
         ButtonClear.setOnClickListener(view110 -> CalcResult.setText(""));
 
         ButtonAdd.setOnClickListener(v -> {
+
             if (CalcResult == null) {
                 CalcResult.setText("");
             } else {
-                Value1 = Integer.parseInt(CalcResult.getText() + "");
-                Addition = true;
-                CalcResult.setText(null);
+                if (CalcResult.getText().toString().trim().length() > 0) {
+                    Value1 = Integer.parseInt(CalcResult.getText() + "");
+                    Addition = true;
+                    CalcResult.setText(null);
+                }
             }
         });
 
         ButtonSubtract.setOnClickListener(v -> {
-            Value1 = Integer.parseInt(CalcResult.getText() + "");
-            Subtraction = true;
-            CalcResult.setText(null);
+            if (CalcResult.getText().toString().trim().length() > 0) {
+                Value1 = Integer.parseInt(CalcResult.getText() + "");
+                Subtraction = true;
+                CalcResult.setText(null);
+            }
         });
 
         ButtonMultiply.setOnClickListener(v -> {
-            Value1 = Integer.parseInt(CalcResult.getText() + "");
-            Multiplication = true;
-            CalcResult.setText(null);
+            if (CalcResult.getText().toString().trim().length() > 0) {
+                Value1 = Integer.parseInt(CalcResult.getText() + "");
+                Multiplication = true;
+                CalcResult.setText(null);
+            }
         });
 
         ButtonDivide.setOnClickListener(v -> {
-            Value1 = Integer.parseInt(CalcResult.getText() + "");
-            Division = true;
-            CalcResult.setText(null);
+            if (CalcResult.getText().toString().trim().length() > 0) {
+                Value1 = Integer.parseInt(CalcResult.getText() + "");
+                Division = true;
+                CalcResult.setText(null);
+            }
         });
 
         ButtonEnter.setOnClickListener(v -> {
@@ -281,8 +305,13 @@ public class MainGameFourPlayers extends AppCompatActivity {
                     Multiplication = false;
                 }
                 if (Division) {
-                    CalcResult.setText(Value1 / Value2 + "");
-                    Division = false;
+                    if(Value2 == 0){
+                        CalcResult.setText("");
+                        Division = false;
+                    }else{
+                        CalcResult.setText(Value1 / Value2 + "");
+                        Division = false;
+                    }
                 }
             }else{
                 CalcResult.setText("0");
@@ -411,6 +440,7 @@ public class MainGameFourPlayers extends AppCompatActivity {
                         })
                 .show();
     }
+
 
 
 }
