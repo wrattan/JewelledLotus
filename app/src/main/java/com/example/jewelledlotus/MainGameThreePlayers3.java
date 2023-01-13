@@ -18,7 +18,8 @@ import android.widget.TextView;
 
 import java.util.Random;
 
-public class MainGameFourPlayers extends AppCompatActivity {
+public class MainGameThreePlayers3 extends AppCompatActivity {
+
     Button PlayerOnePlusButton;
     TextView PlayerOneLifeTotal;
     Button PlayerOneMinusButton;
@@ -32,17 +33,11 @@ public class MainGameFourPlayers extends AppCompatActivity {
     TextView PlayerThreeLifeTotal;
     Button PlayerThreeMinusButton;
 
-    Button PlayerFourPlusButton;
-    TextView PlayerFourLifeTotal;
-    Button PlayerFourMinusButton;
-
     Button Menu;
     Button ExitGame;
     Button ResetGame;
     Button ExitPopUp;
 
-
-    Button Player4Calc;
     Button Player3Calc;
     Button Player2Calc;
     Button PlayerOneCalc;
@@ -50,7 +45,7 @@ public class MainGameFourPlayers extends AppCompatActivity {
     TextView CalcResult;
 
     Button ButtonOne, ButtonTwo,ButtonThree, ButtonFour, ButtonFive, ButtonSix, ButtonSeven,ButtonEight,
-    ButtonNine,ButtonZero,ButtonAdd,ButtonSubtract,ButtonMultiply,ButtonDivide,ButtonSetLife,ButtonEnter,ButtonClear;
+            ButtonNine,ButtonZero,ButtonAdd,ButtonSubtract,ButtonMultiply,ButtonDivide,ButtonSetLife,ButtonEnter,ButtonClear;
 
     Button ExitCalc;
 
@@ -66,18 +61,15 @@ public class MainGameFourPlayers extends AppCompatActivity {
     public boolean PlayerOneClickedCalc =false;
     public boolean PlayerTwoClickedCalc =false;
     public boolean PlayerThreeClickedCalc =false;
-    public boolean PlayerFourClickedCalc =false;
 
 
     public static int _counterPlayer1 = 40;
     public static int _counterPlayer2 = 40;
     public static int _counterPlayer3 = 40;
-    public static int _counterPlayer4 = 40;
 
     public String _stringValPlayer1;
     public String _stringValPlayer2;
     public String _stringValPLayer3;
-    public String _stringValPlayer4;
 
     private View DecorView;
 
@@ -86,7 +78,7 @@ public class MainGameFourPlayers extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        setContentView(R.layout.activity_main_game_four_players);
+        setContentView(R.layout.activity_main_game_three_players3);
 
         this.getWindow().getDecorView().setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_LAYOUT_STABLE
@@ -95,28 +87,23 @@ public class MainGameFourPlayers extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_FULLSCREEN);
 
-        Menu = findViewById(R.id.MenuButton);
-        PlayerOneCalc = findViewById(R.id.CalcMenuPlayerOne);
-        Player2Calc = findViewById(R.id.calcMenuPlayerTwo);
-        Player3Calc = findViewById(R.id.calcMenuPlayerThree);
-        Player4Calc = findViewById(R.id.calcMenuPlayerFour);
+        Menu = findViewById(R.id.MenuButton3Players);
+        PlayerOneCalc = findViewById(R.id.ErebosPlayer3CalcButton);
+        Player2Calc = findViewById(R.id.ThassiaPlayer3CalcButton);
+        Player3Calc = findViewById(R.id.AthreosPlayer3CalcButton);
 
-        PlayerOnePlusButton = findViewById(R.id.PlayerOnePlusButton);
-        PlayerOneMinusButton = findViewById(R.id.PlayerOneMinusButton);
-        PlayerOneLifeTotal = findViewById(R.id.PlayerOneLifeTotalXML);
 
-        PlayerTwoPlusButton = findViewById(R.id.playerTwoPlusButton);
-        PlayerTwoMinusButton = findViewById(R.id.playerTwoMinusButton);
-        PlayerTwoLifeTotal = findViewById(R.id.PlayerTwoLifeTotal);
+        PlayerOnePlusButton = findViewById(R.id.ErebosPlusBuitton);
+        PlayerOneMinusButton = findViewById(R.id.ErebosMinusButton);
+        PlayerOneLifeTotal = findViewById(R.id.ErebosLifeTotal3Players);
 
-        PlayerThreePlusButton = findViewById(R.id.playerThreePlusButton);
-        PlayerThreeMinusButton = findViewById(R.id.playerThreeMinusButton);
-        PlayerThreeLifeTotal = findViewById(R.id.PlayerThreeLifeTotal);
+        PlayerTwoPlusButton = findViewById(R.id.ThassiaPlusButton);
+        PlayerTwoMinusButton = findViewById(R.id.ThassiaMinusButton);
+        PlayerTwoLifeTotal = findViewById(R.id.ThassiaLifeTotal3Players);
 
-        PlayerFourPlusButton = findViewById(R.id.playerFourPlusButton);
-        PlayerFourMinusButton = findViewById(R.id.playerFourMinusButton);
-        PlayerFourLifeTotal = findViewById(R.id.PlayerFourLifeTotal);
-
+        PlayerThreePlusButton = findViewById(R.id.AthreosPlusButton);
+        PlayerThreeMinusButton = findViewById(R.id.AthreosMinusButton);
+        PlayerThreeLifeTotal = findViewById(R.id.AthreosLifeTotal3Players);
 
         PlayerOnePlusButton.setOnClickListener(view -> {
             _counterPlayer1++;
@@ -154,24 +141,10 @@ public class MainGameFourPlayers extends AppCompatActivity {
             PlayerThreeLifeTotal.setText(_stringValPLayer3);
         });
 
-        PlayerFourPlusButton.setOnClickListener(view -> {
-            _counterPlayer4++;
-            _stringValPlayer4 = Integer.toString(_counterPlayer4);
-            PlayerFourLifeTotal.setText(_stringValPlayer4);
+        PlayerOneCalc.setOnClickListener(view -> {
+            PlayerOneClickedCalc = true;
+            calcPopUp(view);
         });
-
-        PlayerFourMinusButton.setOnClickListener(view -> {
-            _counterPlayer4--;
-            _stringValPlayer4 = Integer.toString(_counterPlayer4);
-            PlayerFourLifeTotal.setText(_stringValPlayer4);
-        });
-
-
-
-    PlayerOneCalc.setOnClickListener(view -> {
-        PlayerOneClickedCalc = true;
-        calcPopUp(view);
-    });
         Player2Calc.setOnClickListener(view -> {
             PlayerTwoClickedCalc = true;
             calcPopUp(view);
@@ -181,14 +154,7 @@ public class MainGameFourPlayers extends AppCompatActivity {
             calcPopUp(view);
         });
 
-        Player4Calc.setOnClickListener(view -> {
-            PlayerFourClickedCalc = true;
-            calcPopUp(view);
-        });
-
-
-
-    Menu.setOnClickListener(view -> buttonMenuPopUp(view));
+        Menu.setOnClickListener(view -> buttonMenuPopUp(view));
 
     }
 
@@ -313,28 +279,22 @@ public class MainGameFourPlayers extends AppCompatActivity {
         });
 
         ButtonSetLife.setOnClickListener(view111 -> {
-            if(PlayerOneClickedCalc && CalcResult.getText()!="" && !PlayerTwoClickedCalc && !PlayerThreeClickedCalc && !PlayerFourClickedCalc){
+            if(PlayerOneClickedCalc && CalcResult.getText()!="" && !PlayerTwoClickedCalc && !PlayerThreeClickedCalc){
                 _counterPlayer1 = Integer.parseInt((String) CalcResult.getText());
                 _stringValPlayer1 = Integer.toString(_counterPlayer1);
                 PlayerOneLifeTotal.setText(_stringValPlayer1);
 
             }
-            if(PlayerTwoClickedCalc && CalcResult.getText()!=""&& !PlayerOneClickedCalc && !PlayerThreeClickedCalc && !PlayerFourClickedCalc){
+            if(PlayerTwoClickedCalc && CalcResult.getText()!=""&& !PlayerOneClickedCalc && !PlayerThreeClickedCalc){
                 _counterPlayer2 = Integer.parseInt((String) CalcResult.getText());
                 _stringValPlayer2 = Integer.toString(_counterPlayer2);
                 PlayerTwoLifeTotal.setText(_stringValPlayer2);
 
             }
-            if(PlayerThreeClickedCalc && CalcResult.getText()!=""&& !PlayerOneClickedCalc && !PlayerTwoClickedCalc && !PlayerFourClickedCalc){
+            if(PlayerThreeClickedCalc && CalcResult.getText()!=""&& !PlayerOneClickedCalc && !PlayerTwoClickedCalc){
                 _counterPlayer3 = Integer.parseInt((String) CalcResult.getText());
                 _stringValPLayer3 = Integer.toString(_counterPlayer3);
                 PlayerThreeLifeTotal.setText(_stringValPLayer3);
-
-            }
-           if(PlayerFourClickedCalc && CalcResult.getText()!=""&& !PlayerOneClickedCalc && !PlayerThreeClickedCalc && !PlayerTwoClickedCalc){
-                _counterPlayer4 = Integer.parseInt((String) CalcResult.getText());
-                _stringValPlayer4 = Integer.toString(_counterPlayer4);
-                PlayerFourLifeTotal.setText(_stringValPlayer4);
 
             }
         });
@@ -343,7 +303,6 @@ public class MainGameFourPlayers extends AppCompatActivity {
             PlayerOneClickedCalc = false;
             PlayerTwoClickedCalc = false;
             PlayerThreeClickedCalc = false;
-            PlayerFourClickedCalc = false;
             CalcResult.setText("");
             PopUpCalcWindow.dismiss();
         });
@@ -360,7 +319,7 @@ public class MainGameFourPlayers extends AppCompatActivity {
 
         popupWindow.showAtLocation(view, Gravity.CENTER,0,0);
 
-       // popupWindow.setTouchable(true);
+        // popupWindow.setTouchable(true);
 
 
         ExitGame = viewPopupwindow.findViewById(R.id.ExitGame);
@@ -371,7 +330,7 @@ public class MainGameFourPlayers extends AppCompatActivity {
         ExitPopUp.setOnClickListener(view1 -> popupWindow.dismiss());
 
         ExitGame.setOnClickListener(view12 -> {
-            Intent intent = new Intent(MainGameFourPlayers.this, MainActivity.class);
+            Intent intent = new Intent(MainGameThreePlayers3.this, MainActivity.class);
             startActivity(intent);
             finish();
         });
@@ -389,9 +348,6 @@ public class MainGameFourPlayers extends AppCompatActivity {
             _stringValPLayer3 = Integer.toString(_counterPlayer3);
             PlayerThreeLifeTotal.setText(_stringValPLayer3);
 
-            _counterPlayer4 = 40;
-            _stringValPlayer4 = Integer.toString(_counterPlayer4);
-            PlayerFourLifeTotal.setText(_stringValPlayer4);
         });
 
 
@@ -407,21 +363,19 @@ public class MainGameFourPlayers extends AppCompatActivity {
     }
     public void PlayerPicker(){
         Random rng = new Random();
-        int NumberPicked = rng.nextInt(4);
+        int NumberPicked = rng.nextInt(3);
         String message = "You Shouldn't see this";
 
         if(NumberPicked == 0){
             message = "Erebos was picked";
         }
         if(NumberPicked == 1){
-            message = "Iroas was Picked";
+            message = "Thassia was Picked";
         }
         if(NumberPicked == 2){
-            message = "Heliod was Picked";
+            message = "Athreos was Picked";
         }
-        if(NumberPicked == 3){
-            message = "Thassa was picked";
-        }
+
 
         new AlertDialog.Builder(this).setMessage(message)
                 .setTitle("Player Picked")
@@ -438,4 +392,3 @@ public class MainGameFourPlayers extends AppCompatActivity {
 
 
 }
-

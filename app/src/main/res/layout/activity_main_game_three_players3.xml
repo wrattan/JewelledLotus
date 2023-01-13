@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainGameThreePlayers3">
+
+    <Button
+        android:id="@+id/MenuButton3Players"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="366dp"
+        android:layout_marginTop="181dp"
+        android:layout_marginEnd="277dp"
+        android:layout_marginBottom="182dp"
+        android:text="Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Erebos3player"
+        android:layout_width="454dp"
+        android:layout_height="208dp"
+        android:layout_marginEnd="277dp"
+        android:layout_marginBottom="203dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/erebos" />
+
+    <ImageView
+        android:id="@+id/Thassia3Player"
+        android:layout_width="454dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="277dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/thassia" />
+
+    <ImageView
+        android:id="@+id/Athreos3Players"
+        android:layout_width="276dp"
+        android:layout_height="422dp"
+        android:layout_marginStart="454dp"
+        android:layout_marginEnd="1dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/athreoscroppedrotate" />
+
+    <ImageView
+        android:id="@+id/ErebosPlus3PlayerIMG"
+        android:layout_width="113dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="602dp"
+        android:layout_marginBottom="338dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uneven_plus" />
+
+    <ImageView
+        android:id="@+id/AthreosPlus3Players"
+        android:layout_width="113dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="454dp"
+        android:layout_marginTop="275dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="63dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uneven_plus" />
+
+    <ImageView
+        android:id="@+id/ThassiaPlus3PlayersIMG"
+        android:layout_width="113dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="602dp"
+        android:layout_marginBottom="122dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uneven_plus" />
+
+    <ImageView
+        android:id="@+id/ErebosMinus3PlayersImage"
+        android:layout_width="113dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="602dp"
+        android:layout_marginBottom="212dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uneven_minus" />
+
+    <ImageView
+        android:id="@+id/ThassiaMinus3PlayersIMG"
+        android:layout_width="113dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="602dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uneven_minus" />
+
+    <ImageView
+        android:id="@+id/AthreosMinus3PlayersIMG"
+        android:layout_width="113dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="617dp"
+        android:layout_marginTop="275dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="63dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uneven_minus" />
+
+    <ImageView
+        android:id="@+id/ErebosSetLife3PlayerIMG"
+        android:layout_width="102dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="285dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="344dp"
+        android:layout_marginBottom="296dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lotuslife" />
+
+    <ImageView
+        android:id="@+id/ThassiaSetLife3PlayerIMG"
+        android:layout_width="102dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="285dp"
+        android:layout_marginTop="275dp"
+        android:layout_marginEnd="344dp"
+        android:layout_marginBottom="67dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lotuslife" />
+
+    <ImageView
+        android:id="@+id/AthreosSetLife3PlayerIMG"
+        android:layout_width="102dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="535dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="296dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lotuslife" />
+
+    <TextView
+        android:id="@+id/ErebosLifeTotal3Players"
+        android:layout_width="454dp"
+        android:layout_height="208dp"
+        android:layout_marginEnd="277dp"
+        android:layout_marginBottom="203dp"
+        android:gravity="center"
+        android:text="40"
+        android:textColor="#000000"
+        android:textSize="100dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ThassiaLifeTotal3Players"
+        android:layout_width="454dp"
+        android:layout_height="208dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="276dp"
+        android:gravity="center"
+        android:text="40"
+        android:textColor="#000000"
+        android:textSize="100dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AthreosPlayer3CalcButton"
+        android:layout_width="110dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="535dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="286dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AthreosMinusButton"
+        android:layout_width="92dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="623dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="5dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/AthreosLifeTotal3Players"
+        android:layout_width="276dp"
+        android:layout_height="422dp"
+        android:layout_marginStart="456dp"
+        android:gravity="center"
+        android:rotation="270"
+        android:text="40"
+        android:textColor="#000000"
+        android:textSize="100dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ErebosPlusBuitton"
+        android:layout_width="185dp"
+        android:layout_height="83dp"
+        android:layout_marginEnd="546dp"
+        android:layout_marginBottom="328dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ErebosMinusButton"
+        android:layout_width="185dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="546dp"
+        android:layout_marginBottom="203dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ThassiaPlusButton"
+        android:layout_width="185dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="545dp"
+        android:layout_marginBottom="120dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ThassiaMinusButton"
+        android:layout_width="185dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="323dp"
+        android:layout_marginEnd="545dp"
+        android:layout_marginBottom="5dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AthreosPlusButton"
+        android:layout_width="92dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="468dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="5dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ErebosPlayer3CalcButton"
+        android:layout_width="110dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="283dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="338dp"
+        android:layout_marginBottom="283dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ThassiaPlayer3CalcButton"
+        android:layout_width="110dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="285dp"
+        android:layout_marginTop="275dp"
+        android:layout_marginEnd="336dp"
+        android:layout_marginBottom="51dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
