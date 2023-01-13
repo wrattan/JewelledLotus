@@ -7,7 +7,6 @@
     tools:context=".MainGameFourPlayers">
 
 
-    
     <View
         android:id="@+id/one"
         android:layout_width="0dp"
@@ -100,20 +99,6 @@
         app:layout_constraintTop_toBottomOf="@id/one"
         app:srcCompat="@drawable/iroasimage" />
 
-    <TextView
-        android:id="@+id/PlayerOneLifeTotalXML"
-        android:layout_width="367dp"
-        android:layout_height="207dp"
-        android:layout_marginBottom="204dp"
-        android:gravity="center"
-        android:text="40"
-        android:textColor="#000000"
-        android:textSize="100dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/playerFourMinusButton"
         android:layout_width="236dp"
@@ -174,6 +159,22 @@
         android:layout_height="205dp"
         android:layout_marginStart="367dp"
         android:layout_marginBottom="206dp"
+        android:gravity="center"
+        android:text="40"
+        android:textColor="#000000"
+        android:textSize="100dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PlayerOneLifeTotalXML"
+        android:layout_width="367dp"
+        android:layout_height="207dp"
+        android:layout_marginEnd="364dp"
+        android:layout_marginBottom="204dp"
         android:gravity="center"
         android:text="40"
         android:textColor="#000000"
