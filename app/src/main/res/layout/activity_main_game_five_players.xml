@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainGameFivePlayers">
+
+    <ImageView
+        android:id="@+id/ErebosFivePlayersIMG"
+        android:layout_width="275dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="455dp"
+        android:layout_marginBottom="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/erebos" />
+
+    <ImageView
+        android:id="@+id/HeliodFivePlayersIMG"
+        android:layout_width="275dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="201dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/heliod" />
+
+    <ImageView
+        android:id="@+id/AthreosFivePlayersIMG"
+        android:layout_width="183dp"
+        android:layout_height="445dp"
+        android:layout_marginStart="551dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/athreoscroppedrotate" />
+
+    <ImageView
+        android:id="@+id/ThassiaFivePlayersIMG"
+        android:layout_width="275dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="202dp"
+        android:layout_marginEnd="180dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/thassia" />
+
+    <ImageView
+        android:id="@+id/HeliodFivePlayersMinusIMG"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="277dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="379dp"
+        android:layout_marginBottom="209dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uneven_minus" />
+
+    <ImageView
+        android:id="@+id/IroasFivePlayersIMG"
+        android:layout_width="275dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="202dp"
+        android:layout_marginEnd="455dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iroasimage" />
+
+    <ImageView
+        android:id="@+id/ThassaFivePlayersMinusIMG"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="277dp"
+        android:layout_marginTop="337dp"
+        android:layout_marginEnd="379dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uneven_minus" />
+
+    <ImageView
+        android:id="@+id/AthreosFivePlayersPlusIMG"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="550dp"
+        android:layout_marginTop="337dp"
+        android:layout_marginEnd="106dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uneven_plus" />
+
+    <ImageView
+        android:id="@+id/IroasFivePlayersPlusIMG"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="654dp"
+        android:layout_marginBottom="126dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uneven_plus" />
+
+    <ImageView
+        android:id="@+id/ErebosFivePlayersPlusIMG"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="654dp"
+        android:layout_marginBottom="334dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uneven_plus" />
+
+    <ImageView
+        android:id="@+id/ErebosFivePlayersMinusIMG"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="654dp"
+        android:layout_marginBottom="209dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uneven_minus" />
+
+    <ImageView
+        android:id="@+id/IroasFivePlayersMinusIMG"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="337dp"
+        android:layout_marginEnd="654dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uneven_minus" />
+
+    <ImageView
+        android:id="@+id/HeliodFivePlayersPlusIMG"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginEnd="380dp"
+        android:layout_marginBottom="336dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uneven_plus" />
+
+    <ImageView
+        android:id="@+id/ThassiaFivePlayersPlusIMG"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="277dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="379dp"
+        android:layout_marginBottom="126dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uneven_plus" />
+
+    <ImageView
+        android:id="@+id/AthreosFivePlayersMinusIMG"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="658dp"
+        android:layout_marginTop="337dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uneven_minus" />
+
+    <ImageView
+        android:id="@+id/ErebosFivePlayersLifeTotalIMG"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="456dp"
+        android:layout_marginBottom="269dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lotuslife" />
+
+    <ImageView
+        android:id="@+id/IroasFivePlayersLifeTotalIMG"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="274dp"
+        android:layout_marginEnd="456dp"
+        android:layout_marginBottom="62dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lotuslife" />
+
+    <ImageView
+        android:id="@+id/AthreosFivePlayersLifeTotalIMG"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="596dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="284dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lotuslife" />
+
+    <ImageView
+        android:id="@+id/ThassaFivePlayersLifeTotalIMG"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="475dp"
+        android:layout_marginTop="274dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="62dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lotuslife" />
+
+    <ImageView
+        android:id="@+id/HeliodFivePlayersLifeTotalIMG"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="477dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="269dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lotuslife" />
+
+    <TextView
+        android:id="@+id/ErebosFivePlayersLifeTotal"
+        android:layout_width="275dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="455dp"
+        android:layout_marginBottom="201dp"
+        android:gravity="center"
+        android:text="40"
+        android:textColor="#000000"
+        android:textSize="100dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ErebosFivePlayersMinusButton"
+        android:layout_width="124dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="605dp"
+        android:layout_marginBottom="212dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/IroasFivePlayersMinusButton"
+        android:layout_width="124dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="337dp"
+        android:layout_marginEnd="605dp"
+        android:layout_marginBottom="2dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ThassaFivePlayersMinusButton"
+        android:layout_width="124dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="286dp"
+        android:layout_marginTop="337dp"
+        android:layout_marginEnd="321dp"
+        android:layout_marginBottom="2dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/IroasFivePlayersLifeTotal2"
+        android:layout_width="275dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="202dp"
+        android:layout_marginEnd="454dp"
+        android:gravity="center"
+        android:text="40"
+        android:textColor="#000000"
+        android:textSize="100dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ThassaFivePlayersLifeTotal"
+        android:layout_width="275dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="275dp"
+        android:layout_marginTop="202dp"
+        android:layout_marginEnd="181dp"
+        android:gravity="center"
+        android:text="40"
+        android:textColor="#000000"
+        android:textSize="100dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/HeliodFivePlayersMinusButton"
+        android:layout_width="124dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="286dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="321dp"
+        android:layout_marginBottom="212dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/HeliodFivePlayersLifeTotal"
+        android:layout_width="275dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="277dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="199dp"
+        android:gravity="center"
+        android:text="40"
+        android:textColor="#000000"
+        android:textSize="100dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/AthreosFivePlayersLifeTotal"
+        android:layout_width="183dp"
+        android:layout_height="411dp"
+        android:layout_marginStart="548dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:rotation="270"
+        android:text="40"
+        android:textColor="#000000"
+        android:textSize="100dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ErebosFivePlayersPlusButton"
+        android:layout_width="124dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="605dp"
+        android:layout_marginBottom="334dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/IroasFivePlayersPlusButton"
+        android:layout_width="124dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="213dp"
+        android:layout_marginEnd="605dp"
+        android:layout_marginBottom="126dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ThassaFivePlayersPlusButton"
+        android:layout_width="124dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="286dp"
+        android:layout_marginTop="213dp"
+        android:layout_marginEnd="321dp"
+        android:layout_marginBottom="126dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/HeliodFivePlayersPlusButton"
+        android:layout_width="124dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="286dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="321dp"
+        android:layout_marginBottom="334dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AthreosFivePlayersPlusButton"
+        android:layout_width="77dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="561dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="93dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AthreosFivePlayersMinusButton"
+        android:layout_width="77dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="655dp"
+        android:layout_marginTop="274dp"
+        android:layout_marginBottom="1dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ErebosCalcFivePlayersButton"
+        android:layout_width="75dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="456dp"
+        android:layout_marginBottom="264dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/IroasCalcFivePlayersButton"
+        android:layout_width="75dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="269dp"
+        android:layout_marginEnd="456dp"
+        android:layout_marginBottom="62dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ThassaCalcFivePlayersButton"
+        android:layout_width="75dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="475dp"
+        android:layout_marginTop="269dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="62dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/HeliodCalcFivePlayersButton"
+        android:layout_width="75dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="476dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="269dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AthreosCalcFivePlayersButton"
+        android:layout_width="75dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="596dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="279dp"
+        android:alpha="0.00"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/MenuButtonFivePlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="423dp"
+        android:layout_marginTop="181dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="182dp"
+        android:text="Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
